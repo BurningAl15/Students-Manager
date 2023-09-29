@@ -1,0 +1,100 @@
+{
+    "class": [
+        {
+            "type": "Scratch",
+            "name": "CHI1179_VI-19",
+            "initial_date": "29 Septiembre",
+            "schedule": "Viernes a las 17 horas / 19 horas Chile",
+            "students": [
+                {
+                    "id": "0-CHI1179_VI-19",
+                    "name": "John Doe",
+                    "access": "john.doe / 12345",
+                    "direct_link": "https://example.com/john_doe",
+                    "age": 9,
+                    "payed_classes": 10,
+                    "given_classes": 5,
+                    "parent": "Jane Doe",
+                    "email": "jane.doe@example.com",
+                    "number": "+1234567890",
+                    "backoffice_link": "https://example.com/backoffice/john_doe",
+                    "country": "Fakeistan",
+                    "isStillInClass": true
+                },
+                {
+                    "id": "1-CHI1179_VI-19",
+                    "name": "Alice Johnson",
+                    "access": "alice.johnson / 54321",
+                    "direct_link": "https://example.com/alice_johnson",
+                    "age": 10,
+                    "payed_classes": 8,
+                    "given_classes": 3,
+                    "parent": "Bob Johnson",
+                    "email": "bob.johnson@example.com",
+                    "number": "+9876543210",
+                    "backoffice_link": "https://example.com/backoffice/alice_johnson",
+                    "country": "Faketopia",
+                    "isStillInClass": true
+                }
+            ],
+            "technical_support": "support@example.com",
+            "link_zoom": "https://example.com/zoom/class_1",
+            "chat": "https://example.com/chat/class_1",
+            "last_class": "https://example.com/last_class/class_1",
+            "class_group_info": "https://example.com/group_info/class_1"
+        },
+        {
+            "type": "Scratch",
+            "name": "CHI1180_SA-12",
+            "initial_date": "30 Septiembre",
+            "schedule": "Sábado a las 10 horas / 12 horas Chile",
+            "students": [
+                {
+                    "id": "0-CHI1180_SA-12",
+                    "name": "Eva Smith",
+                    "access": "eva.smith / password",
+                    "direct_link": "https://example.com/eva_smith",
+                    "age": 11,
+                    "payed_classes": 12,
+                    "given_classes": 6,
+                    "parent": "David Smith",
+                    "email": "david.smith@example.com",
+                    "number": "+1122334455",
+                    "backoffice_link": "https://example.com/backoffice/eva_smith",
+                    "country": "Fakelandia",
+                    "isStillInClass": true
+                },
+                {
+                    "id": "1-CHI1180_SA-12",
+                    "name": "Oliver Wilson",
+                    "access": "oliver.wilson / pass123",
+                    "direct_link": "https://example.com/oliver_wilson",
+                    "age": 9,
+                    "payed_classes": 9,
+                    "given_classes": 4,
+                    "parent": "Sophia Wilson",
+                    "email": "sophia.wilson@example.com",
+                    "number": "+9988776655",
+                    "backoffice_link": "https://example.com/backoffice/oliver_wilson",
+                    "country": "Faketown",
+                    "isStillInClass": true
+                }
+            ],
+            "technical_support": "support@example.com",
+            "link_zoom": "https://example.com/zoom/class_2",
+            "chat": "https://example.com/chat/class_2",
+            "last_class": "https://example.com/last_class/class_2",
+            "class_group_info": "https://example.com/group_info/class_2"
+        }
+    ],
+    "options": [
+        {
+            "name": "CHI1179_VI-19",
+            "index": 0
+        },
+        {
+            "name": "CHI1180_SA-12",
+            "index": 1
+        }
+    ]
+}
