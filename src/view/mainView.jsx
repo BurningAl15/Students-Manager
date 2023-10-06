@@ -177,6 +177,9 @@ export default function MainView({ classInformation, options }) {
           student.name
             .toLowerCase()
             .includes(searchParameter.toLocaleLowerCase()) ||
+          student.parent
+            .toLowerCase()
+            .includes(searchParameter.toLocaleLowerCase()) ||
           student.age == searchParameter
       );
       setCurrentStudents(filteredAndSearched);
