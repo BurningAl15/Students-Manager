@@ -2,6 +2,7 @@ import { Card, CardContent, Typography, Grid } from "@mui/material";
 
 import Clipboard from "./Clipboard";
 import CardProperty from "./CardProperty";
+import { getCountryByCode } from "../utils/getCountryByCode";
 
 export default function Student(props) {
   const {
@@ -39,16 +40,21 @@ export default function Student(props) {
                 <CardProperty title={"Edad:"} value={age} />
                 <CardProperty title={"Padres:"} value={parent} />
               </Grid>
-              <Grid item md={1}>
-              </Grid>
+              <Grid item md={1}></Grid>
 
               <Grid item md={5}>
                 <CardProperty title={"Clases Pagadas:"} value={payed_classes} />
                 <CardProperty title={"Clases Tomadas:"} value={given_classes} />
-                <CardProperty title={"País:"} value={country} />
+                {/* <CardProperty title={"País:"} value={country} flag={true} /> */}
+                <CardProperty
+                  title={"País:"}
+                  value={getCountryByCode(number).country}
+                  flag={true}
+                />
+                {/* {console.log(getCountryByCode(number).country)} */}
               </Grid>
             </Grid>
-            <hr/>
+            <hr />
             <Grid container direction="row" alignItems={"flex-start"}>
               <Grid item md={12}>
                 <Clipboard

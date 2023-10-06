@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Pie, Bar, Line, Doughnut } from "react-chartjs-2";
 import { Button, Grid, Typography } from "@mui/material";
 
-function PieChart({ chartData, setChartValue }) {
+function CustomChart({ chartData, setChartValue }) {
   const [chart, setChart] = useState(0);
 
   const getChart = (chartValue) => {
@@ -147,4 +147,4 @@ function PieChart({ chartData, setChartValue }) {
     </Grid>
   );
 }
-export default PieChart;
+export default CustomChart;

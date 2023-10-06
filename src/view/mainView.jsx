@@ -5,42 +5,9 @@ import { Button, Grid, TextField, Typography } from "@mui/material";
 import Clipboard from "../components/Clipboard";
 import Chart from "chart.js/auto";
 import { CategoryScale } from "chart.js";
-import PieChart from "../components/PieChart";
+import CustomChart from "../components/CustomChart";
 
 Chart.register(CategoryScale);
-
-const Data = [
-  {
-    id: 1,
-    year: 2016,
-    userGain: 80000,
-    userLost: 823,
-  },
-  {
-    id: 2,
-    year: 2017,
-    userGain: 45677,
-    userLost: 345,
-  },
-  {
-    id: 3,
-    year: 2018,
-    userGain: 78888,
-    userLost: 555,
-  },
-  {
-    id: 4,
-    year: 2019,
-    userGain: 90000,
-    userLost: 4555,
-  },
-  {
-    id: 5,
-    year: 2020,
-    userGain: 4300,
-    userLost: 234,
-  },
-];
 
 export default function MainView({ classInformation, options }) {
   const [count, setCount] = useState(0);
@@ -51,8 +18,9 @@ export default function MainView({ classInformation, options }) {
   const chartValues = (data) => {
     const orderData = {};
     const filteredData = [];
+    const validatedData = data.filter((element) => element.isStillInClass);
 
-    for (const dataPoint of data) {
+    for (const dataPoint of validatedData) {
       const label = dataPoint.age;
       const data = dataPoint.name;
 
@@ -76,7 +44,7 @@ export default function MainView({ classInformation, options }) {
     return filteredData;
   };
 
-  console.log(chartValues(classInformation[count].students));
+  // console.log(chartValues(classInformation[count].students));
 
   const [chartData, setChartData] = useState({
     labels: chartValues(classInformation[count].students).map(
@@ -256,7 +224,10 @@ export default function MainView({ classInformation, options }) {
                 />
               </Grid>
               <Grid item md={1}></Grid>
-              <PieChart chartData={chartData} setChartValue={setChartValue} />
+              <CustomChart
+                chartData={chartData}
+                setChartValue={setChartValue}
+              />
 
               <Grid item md={1}></Grid>
               <Grid
