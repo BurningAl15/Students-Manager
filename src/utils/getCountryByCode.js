@@ -8,10 +8,6 @@ const codeList = [
     country: "Mexico",
   },
   {
-    code: "+53",
-    country: "Cuba",
-  },
-  {
     code: "+54",
     country: "Argentina",
   },
@@ -46,10 +42,6 @@ const codeList = [
   {
     code: "+598",
     country: "Uruguay",
-  },
-  {
-    code: "+599",
-    country: "Curacao",
   },
   {
     code: "+501",
@@ -93,7 +85,7 @@ function getCountryByCode(phone) {
   let countryCode = codeList.filter((code) => {
     return phone.includes(code.code);
   });
-  console.log(countryCode, phone);
+//   console.log(countryCode);
   return countryCode !== undefined ? countryCode[0] : "NON";
 }
 

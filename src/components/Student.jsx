@@ -51,7 +51,6 @@ export default function Student(props) {
                   value={getCountryByCode(number).country}
                   flag={true}
                 />
-                {/* {console.log(getCountryByCode(number).country)} */}
               </Grid>
             </Grid>
             <hr />

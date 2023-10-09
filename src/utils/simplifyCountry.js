@@ -7,14 +7,6 @@ const exceptions = [
     country: "Chile",
     nickname: "chl",
   },
-  {
-    country: "Paraguay",
-    nickname: "py",
-  },
-  {
-    country: "Curacao",
-    nickname: "cw",
-  },
 ];
 
 function simplifyCountry(country) {
@@ -30,7 +22,6 @@ function simplifyCountry(country) {
   } else {
     _country = country.toLowerCase().substring(0, 3);
   }
-  console.log(_country);
   return _country;
 }
 

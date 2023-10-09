@@ -93,11 +93,12 @@ function CustomChart({ chartData, setChartValue }) {
   return (
     <Grid
       item
-      md={4}
+      xs={5}
       direction="column"
       justifyContent={"flex-start"}
       alignItems={"center"}
       className="chart-container"
+      disablegutters
       sx={{
         border: "1px solid #0D1117",
         borderRadius: "20px",
@@ -105,12 +106,13 @@ function CustomChart({ chartData, setChartValue }) {
         width: "80%",
         minHeight: "400px",
         maxHeight: "400px",
+        padding: "0 !important",
       }}
     >
       <Typography sx={{ textAlign: "center" }}>Ages</Typography>
       <Grid item>{getChart(chart)}</Grid>
 
-      <Grid item>
+      <Grid item disablegutters>
         <Button
           onClick={() => {
             setChart(0);
